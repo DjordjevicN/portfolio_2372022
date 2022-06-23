@@ -7,6 +7,7 @@ export const projects = [
     tech: "React, Redux, GatsbyJS",
     image:
       "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/portfolio/landlinebooking.png",
+    video: "",
     githubLink: "",
     githubLink2: "",
     githubLinkBtnText: "",
@@ -23,6 +24,7 @@ export const projects = [
     tech: "Wordpress",
     image:
       "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/portfolio/maia.png",
+    video: "",
     githubLink: "",
     githubLink2: "",
     githubLinkBtnText: "",
@@ -40,6 +42,7 @@ export const projects = [
       "The idea was to make a marketplace that matches freelancers with local demand, allowing consumers to find immediate help with everyday tasks.",
     image:
       "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/portfolio/zanatlijeLanding%201.png",
+    video: "",
     tech: "",
     githubLink: "https://github.com/DjordjevicN/Zanatlije-frontend",
     githubLink2: "https://github.com/DjordjevicN/Zanatlije-Backend",

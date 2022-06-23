@@ -4,6 +4,9 @@
   margin-bottom: 150px;
   max-width: 900px;
   width: 100%;
+  opacity: 0;
+  right: 100px;
+  position: relative;
   &__content {
     background-color: $main-yellow;
     padding: 10px;

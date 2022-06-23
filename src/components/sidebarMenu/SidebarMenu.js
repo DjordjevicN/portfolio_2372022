@@ -9,7 +9,7 @@ function SidebarMenu() {
   useEffect(() => {
     setTimeout(() => {
       setIsOpen(true);
-    }, 5000);
+    }, 3000);
   }, []);
 
   const burger = {
@@ -40,7 +40,7 @@ function SidebarMenu() {
   const line2 = {
     open: {
       rotate: 45,
-      y: 3,
+      y: 0,
       transition: {
         delay: 0.3,
         duration: 0.3,
@@ -55,7 +55,8 @@ function SidebarMenu() {
   };
   const line3 = {
     open: {
-      y: -3,
+      y: -7,
+      x: 1,
       rotate: -45,
       transition: {
         delay: 0.3,
@@ -92,7 +93,7 @@ function SidebarMenu() {
   return (
     <div className="sidebar">
       <div className="sidebar__content">
-        <div
+        <motion.div
           className="burger"
           animate={isOpen ? "open" : "closed"}
           variants={burger}
@@ -114,7 +115,7 @@ function SidebarMenu() {
             animate={isOpen ? "open" : "closed"}
             variants={line3}
           ></motion.div>
-        </div>
+        </motion.div>
 
         <motion.div
           className="menuLinks"

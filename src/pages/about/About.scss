@@ -5,6 +5,8 @@
   display: grid;
   place-items: center;
   position: relative;
+  opacity: 0;
+  left: 100px;
 
   &__content {
     width: 600px;

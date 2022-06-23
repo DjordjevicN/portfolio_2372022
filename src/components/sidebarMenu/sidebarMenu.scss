@@ -1,0 +1,42 @@
+@import "../../styles/colors.scss";
+
+.sidebar {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  &__content {
+    position: relative;
+    .burger > * {
+      border-bottom: 3px solid $light-blue;
+      width: 30px;
+      margin-top: 5px;
+    }
+    .burger {
+      position: relative;
+      z-index: 1000;
+      cursor: pointer;
+
+      .line-1,
+      .line-3,
+      .line-2 {
+        width: 30px;
+      }
+    }
+    .menuLinks {
+      position: absolute;
+      top: -5px;
+      right: 20px;
+      display: flex;
+      width: 500px;
+      justify-content: space-around;
+      z-index: 100;
+      opacity: 0;
+      a {
+        text-decoration: none;
+        color: $main-yellow;
+        font-size: 24px;
+      }
+    }
+  }
+}

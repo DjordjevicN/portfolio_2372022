@@ -6,7 +6,7 @@ export const projects = [
       "Working in a team with designer and backend developer on developing Dispatch dashboard, Booking service, Business website",
     tech: "React, Redux, GatsbyJS",
     image:
-      "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/portfolio/landlinebooking.png",
+      "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/portfolio/landlinedash.png",
     video: "",
     githubLink: "",
     githubLink2: "",
@@ -14,8 +14,8 @@ export const projects = [
     githubLink2BtnText: "",
     visitLink: "https://landline.com",
     visitLinkBtnText: "VISIT",
-    visitLink2: "https://landline.com/landline",
-    visitLink2BtnText: "Booking",
+    visitLink2: "https://backoffice.landline.com",
+    visitLink2BtnText: "DASHBOARD",
   },
   {
     id: 1,

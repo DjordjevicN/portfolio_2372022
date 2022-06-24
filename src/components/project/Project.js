@@ -22,6 +22,7 @@ function Project({
       setEntrance(true);
     }, 1000);
   }, []);
+
   const projects = {
     open: {
       opacity: 1,
@@ -44,6 +45,9 @@ function Project({
           className="project"
           animate={entrance ? "open" : "closed"}
           variants={projects}
+          onClick={() => {
+            if (visitLink) window.location.href = visitLink;
+          }}
         >
           <div className="project__content">
             <div className="imagePreview">

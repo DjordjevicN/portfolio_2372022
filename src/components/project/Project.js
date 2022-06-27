@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Project.scss";
 import { motion } from "framer-motion";
-
+console.log("lol");
 function Project({
   title,
   tech,

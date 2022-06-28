@@ -27,7 +27,7 @@ function App() {
 
       <SideMenu />
       <div className="pages">
-        <Routes>
+        <Routes basename="nikola-djordjevic.com">
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />

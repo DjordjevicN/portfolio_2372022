@@ -28,9 +28,9 @@ function App() {
       <SideMenu />
       <div className="pages">
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route index path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
         </Routes>
       </div>
     </div>

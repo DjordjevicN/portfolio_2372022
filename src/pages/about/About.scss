@@ -1,4 +1,6 @@
 @import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
+
 .about {
   width: 100%;
   height: 100vh;
@@ -9,8 +11,8 @@
   left: 100px;
 
   &__content {
-    width: 600px;
-
+    width: 80%;
+    max-width: 600px;
     .inner-content {
       background-color: $main-yellow;
       padding: 20px;
@@ -19,7 +21,8 @@
       background-image: url(https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/box-bottom.png);
       background-repeat: no-repeat;
       background-position: bottom;
-      width: 600px;
+      width: 100%;
+      max-width: 600px;
       height: 30px;
     }
 
@@ -37,6 +40,7 @@
       justify-content: space-between;
       flex-direction: row;
       margin-top: 30px;
+
       a {
         text-decoration: none;
         font-size: 24px;
@@ -44,6 +48,10 @@
         color: black;
         padding: 0px 20px;
         background-color: $main-yellow;
+        @include resp(430px) {
+          font-size: 16px;
+          padding: 0px 0px;
+        }
       }
     }
   }

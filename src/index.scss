@@ -8,23 +8,10 @@ body {
   // font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+}
+* {
+  /* width */
   ::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: $main-yellow;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $light-blue;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $light-pink;
+    display: none;
   }
 }

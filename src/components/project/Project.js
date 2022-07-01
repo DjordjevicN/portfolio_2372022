@@ -65,22 +65,30 @@ function Project({
                 <div className="right">
                   {githubLink && (
                     <div className="button">
-                      <a href={githubLink}>{githubLinkBtnText}</a>
+                      <a target="_blank" rel="noreferrer" href={githubLink}>
+                        {githubLinkBtnText}
+                      </a>
                     </div>
                   )}
                   {githubLink2 && (
                     <div className="button">
-                      <a href={githubLink2}>{githubLink2BtnText}</a>
+                      <a target="_blank" rel="noreferrer" href={githubLink2}>
+                        {githubLink2BtnText}
+                      </a>
                     </div>
                   )}
                   {visitLink && (
                     <div className="button">
-                      <a href={visitLink}>{visitLinkBtnText}</a>
+                      <a target="_blank" rel="noreferrer" href={visitLink}>
+                        {visitLinkBtnText}
+                      </a>
                     </div>
                   )}
                   {visitLink2 && (
                     <div className="button">
-                      <a href={visitLink2}>{visitLink2BtnText}</a>
+                      <a target="_blank" rel="noreferrer" href={visitLink2}>
+                        {visitLink2BtnText}
+                      </a>
                     </div>
                   )}
                 </div>

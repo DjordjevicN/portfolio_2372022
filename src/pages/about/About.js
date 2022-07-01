@@ -37,11 +37,27 @@ function About() {
             </p>
 
             <div className="links">
-              <a href="https://www.linkedin.com/in/nikola-djordjevic-503066193/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/nikola-djordjevic-503066193/"
+              >
                 LinkedIn
               </a>
-              <a href="https://twitter.com/DjordjevicNix">Twitter</a>
-              <a href="https://github.com/DjordjevicN">Github</a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/DjordjevicNix"
+              >
+                Twitter
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/DjordjevicN"
+              >
+                Github
+              </a>
             </div>
           </div>
           <div className="edge"></div>

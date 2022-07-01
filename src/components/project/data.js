@@ -43,7 +43,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/portfolio/zanatlijeLanding%201.png",
     video: "",
-    tech: "",
+    tech: "React, Redux, NodeJS",
     githubLink: "https://github.com/DjordjevicN/Zanatlije-frontend",
     githubLink2: "https://github.com/DjordjevicN/Zanatlije-Backend",
     githubLinkBtnText: "GITHUB FRONT",

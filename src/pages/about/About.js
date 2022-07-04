@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
-
+// changes made from Linux
 function About() {
   const [isOpen, setIsOpen] = useState(false);
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Project.scss";
 import { motion } from "framer-motion";
 
@@ -17,11 +17,6 @@ function Project({
   visitLink2BtnText,
 }) {
   const [entrance, setEntrance] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setEntrance(true);
-    }, 1000);
-  }, []);
 
   const projects = {
     open: {
@@ -40,64 +35,66 @@ function Project({
   };
   return (
     <>
-      {entrance && (
-        <motion.div
-          className="project"
-          animate={entrance ? "open" : "closed"}
-          variants={projects}
-          onClick={() => {
-            if (visitLink) window.location.href = visitLink;
-          }}
-        >
-          <div className="project__content">
-            <div className="imagePreview">
-              <img src={image} alt={`${title} project`} />
-              <div className="information">
-                <div className="left">
-                  <div className="title">
-                    <h2>{title}</h2>
-                  </div>
-                  <div className="text">
-                    <p>{mainText}</p>
-                    <p className="tech">{`Tech: ${tech}`}</p>
-                  </div>
+      <motion.div
+        className="project"
+        animate={entrance ? "open" : "closed"}
+        transition={{ ease: "easeOut", duration: 0.3, delay: 0.2 }}
+        variants={projects}
+        onClick={() => {
+          if (visitLink) window.location.href = visitLink;
+        }}
+      >
+        <div className="project__content">
+          <div className="imagePreview">
+            <img src={image} alt={`${title} project`} />
+            <div className="information">
+              <div className="left">
+                <div className="title">
+                  <h2>{title}</h2>
                 </div>
-                <div className="right">
-                  {githubLink && (
-                    <div className="button">
-                      <a target="_blank" rel="noreferrer" href={githubLink}>
-                        {githubLinkBtnText}
-                      </a>
-                    </div>
-                  )}
-                  {githubLink2 && (
-                    <div className="button">
-                      <a target="_blank" rel="noreferrer" href={githubLink2}>
-                        {githubLink2BtnText}
-                      </a>
-                    </div>
-                  )}
-                  {visitLink && (
-                    <div className="button">
-                      <a target="_blank" rel="noreferrer" href={visitLink}>
-                        {visitLinkBtnText}
-                      </a>
-                    </div>
-                  )}
-                  {visitLink2 && (
-                    <div className="button">
-                      <a target="_blank" rel="noreferrer" href={visitLink2}>
-                        {visitLink2BtnText}
-                      </a>
-                    </div>
-                  )}
+                <div className="text">
+                  <p>{mainText}</p>
+                  <p className="tech">{`Tech: ${tech}`}</p>
                 </div>
+              </div>
+              <div className="right">
+                {githubLink && (
+                  <div className="button">
+                    <a target="_blank" rel="noreferrer" href={githubLink}>
+                      {githubLinkBtnText}
+                    </a>
+                  </div>
+                )}
+                {githubLink2 && (
+                  <div className="button">
+                    <a target="_blank" rel="noreferrer" href={githubLink2}>
+                      {githubLink2BtnText}
+                    </a>
+                  </div>
+                )}
+                {visitLink && (
+                  <div className="button">
+                    <a target="_blank" rel="noreferrer" href={visitLink}>
+                      {visitLinkBtnText}
+                    </a>
+                  </div>
+                )}
+                {visitLink2 && (
+                  <div className="button">
+                    <a target="_blank" rel="noreferrer" href={visitLink2}>
+                      {visitLink2BtnText}
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
-          <div className="edge" />
-        </motion.div>
-      )}
+        </div>
+        <motion.div
+          whileInView={() => setEntrance(true)}
+          className="edge"
+        ></motion.div>
+      </motion.div>
     </>
   );
 }

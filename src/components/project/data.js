@@ -14,7 +14,7 @@ export const projects = [
     githubLink2BtnText: "",
     visitLink: "https://landline.com",
     visitLinkBtnText: "VISIT",
-    visitLink2: "https://backoffice.landline.com",
+    visitLink2: "https://backoffice.landline.com/login",
     visitLink2BtnText: "DASHBOARD",
   },
   {

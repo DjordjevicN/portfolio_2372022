@@ -9,6 +9,7 @@ function About() {
     open: { left: 0, opacity: 1, bottom: "20px" },
     closed: {},
   };
+
   return (
     <>
       <AnimatePresence>
@@ -19,7 +20,7 @@ function About() {
           variants={textBox}
         >
           <div className="about__content">
-            <div className="inner-content">
+            <div className="inner-content ">
               <p>
                 Hi, I'm Nikola Djordjevic, a front-end developer based in
                 Belgrade, Serbia.
@@ -67,6 +68,9 @@ function About() {
           </div>
         </motion.div>
       </AnimatePresence>
+      <div className="outerElements">
+        <div className="outerElements__content">test</div>
+      </div>
     </>
   );
 }

@@ -41,7 +41,7 @@ export const projects = [
     mainText:
       "The idea is to build a platform where you can create your meal plan and track what you eat every day as well as count your caloric intake.",
     image:
-      "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/mealplan.png",
+      "https://raw.githubusercontent.com/DjordjevicN/daily-meal-plan/master/public/images/mealPlan.png",
     video: "",
     tech: "React, Typescript, Redux, NodeJS",
     githubLink: "https://github.com/DjordjevicN/daily-meal-plan",

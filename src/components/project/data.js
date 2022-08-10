@@ -37,15 +37,15 @@ export const projects = [
 
   {
     id: 2,
-    title: "Zanatlije.com",
+    title: "Meal Plan",
     mainText:
-      "The idea was to make a marketplace that matches freelancers with local demand, allowing consumers to find immediate help with everyday tasks.",
+      "The idea is to build a platform where you can create your meal plan and track what you eat every day as well as count your caloric intake.",
     image:
-      "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/portfolio/zanatlijeLanding%201.png",
+      "https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/mealplan.png",
     video: "",
-    tech: "React, Redux, NodeJS",
-    githubLink: "https://github.com/DjordjevicN/Zanatlije-frontend",
-    githubLink2: "https://github.com/DjordjevicN/Zanatlije-Backend",
+    tech: "React, Typescript, Redux, NodeJS",
+    githubLink: "https://github.com/DjordjevicN/daily-meal-plan",
+    githubLink2: "https://github.com/DjordjevicN/daily-plan-backend",
     githubLinkBtnText: "GITHUB FRONT",
     githubLink2BtnText: "GITHUB BACK",
     visitLinkBtnText: "visitLinkBtnText",

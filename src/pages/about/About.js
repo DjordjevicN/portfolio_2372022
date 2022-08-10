@@ -68,9 +68,6 @@ function About() {
           </div>
         </motion.div>
       </AnimatePresence>
-      <div className="outerElements">
-        <div className="outerElements__content">test</div>
-      </div>
     </>
   );
 }

@@ -47,4 +47,13 @@
     background: #1b1b1b;
     opacity: 0.8;
   }
+  .content {
+    .downloadButton {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      z-index: 100;
+      opacity: 0;
+    }
+  }
 }

@@ -3,8 +3,17 @@ import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
 import video from "./components/video/3.mp4";
+import CyberBtn from "./components/button/CyberBtn";
+import { motion } from "framer-motion";
 
 function App() {
+  const cvBtn = {
+    open: {
+      opacity: 1,
+      right: 30,
+    },
+  };
+
   return (
     <div className="App">
       <video id="bgVid" autoPlay loop muted>
@@ -17,6 +26,19 @@ function App() {
         />
       </div>
       <div className="content">
+        <motion.div
+          className="downloadButton"
+          animate={"open"}
+          transition={{ ease: "easeOut", duration: 0.1, delay: 3 }}
+          variants={cvBtn}
+        >
+          <a
+            href="images/cv.pdf"
+            download="CV Nikola Djordjevic Frontend developer"
+          >
+            <CyberBtn title={"Download CV"} />
+          </a>
+        </motion.div>
         <Home />
         <About />
         <Projects />

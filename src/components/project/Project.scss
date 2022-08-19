@@ -1,4 +1,5 @@
-@import "../../styles//colors.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
 
 .project {
   margin-bottom: 150px;
@@ -18,6 +19,9 @@
         display: grid;
         grid-template-columns: 2fr 0.5fr;
         margin-top: 20px;
+        @include resp(500px) {
+          grid-template-columns: 1fr;
+        }
         .left {
           width: 90%;
           .title {
@@ -36,8 +40,11 @@
           }
         }
         .right {
+          @include resp(500px) {
+            display: flex;
+            margin-top: 40px;
+          }
           .button {
-            background-color: $light-blue;
             margin-bottom: 10px;
             padding: 5px 10px;
             text-align: center;

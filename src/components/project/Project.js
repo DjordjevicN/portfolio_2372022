@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Project.scss";
 import { motion } from "framer-motion";
+import CyberBtn from "../button/CyberBtn";
 
 function Project({
   title,
@@ -61,28 +62,28 @@ function Project({
                 {githubLink && (
                   <div className="button">
                     <a target="_blank" rel="noreferrer" href={githubLink}>
-                      {githubLinkBtnText}
+                      <CyberBtn title={githubLinkBtnText} />
                     </a>
                   </div>
                 )}
                 {githubLink2 && (
                   <div className="button">
                     <a target="_blank" rel="noreferrer" href={githubLink2}>
-                      {githubLink2BtnText}
+                      <CyberBtn title={githubLink2BtnText} />
                     </a>
                   </div>
                 )}
                 {visitLink && (
                   <div className="button">
                     <a target="_blank" rel="noreferrer" href={visitLink}>
-                      {visitLinkBtnText}
+                      <CyberBtn title={visitLinkBtnText} />
                     </a>
                   </div>
                 )}
                 {visitLink2 && (
                   <div className="button">
                     <a target="_blank" rel="noreferrer" href={visitLink2}>
-                      {visitLink2BtnText}
+                      <CyberBtn title={visitLink2BtnText} />
                     </a>
                   </div>
                 )}

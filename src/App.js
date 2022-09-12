@@ -33,7 +33,7 @@ function App() {
           variants={cvBtn}
         >
           <a
-            href="images/cv.pdf"
+            href="images/cvYellow.pdf"
             download="CV Nikola Djordjevic Frontend developer"
           >
             <CyberBtn title={"Download CV"} />

@@ -18,6 +18,7 @@ const introText = [
   },
   { id: 5, text: "", glitch: false, duration: 3000 },
 ]
+
 const Intro = () => {
   const [index, setIndex] = useState(0)
 

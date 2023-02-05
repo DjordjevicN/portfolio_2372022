@@ -1,6 +1,6 @@
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import "./Home.scss";
+import React from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import "./Home.scss"
 
 function Home() {
   let homeVariants = {
@@ -12,7 +12,7 @@ function Home() {
       opacity: 1,
       x: 0,
     },
-  };
+  }
 
   return (
     <div className="homeWrapper">
@@ -39,7 +39,7 @@ function Home() {
         </div>
       </AnimatePresence>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

@@ -91,10 +91,10 @@ function Project({
             </div>
           </div>
         </div>
-        <motion.div
+        {/* <motion.div
           whileInView={() => setEntrance(true)}
           className="edge"
-        ></motion.div>
+        ></motion.div> */}
       </motion.div>
     </>
   );

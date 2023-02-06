@@ -1,10 +1,10 @@
-import "./App.scss";
-import About from "./pages/about/About";
-import Home from "./pages/home/Home";
-import Projects from "./pages/projects/Projects";
-import video from "./components/video/3.mp4";
-import CyberBtn from "./components/button/CyberBtn";
-import { motion } from "framer-motion";
+import "./App.scss"
+import About from "./pages/about/About"
+import Home from "./pages/home/Home"
+import Projects from "./pages/projects/Projects"
+import video from "./components/video/3.mp4"
+import CyberBtn from "./components/button/CyberBtn"
+import { motion } from "framer-motion"
 
 function App() {
   const cvBtn = {
@@ -12,21 +12,21 @@ function App() {
       opacity: 1,
       right: 30,
     },
-  };
-
+  }
+  // test
   return (
     <div className="App">
       <video id="bgVid" autoPlay loop muted>
         <source src={video} type="video/mp4" />
       </video>
-      <div className="topEdge">
+      {/* <div className="topEdge">
         <img
           src="https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/Vector.png"
           alt=""
         />
-      </div>
+      </div> */}
       <div className="content">
-        <motion.div
+        {/* <motion.div
           className="downloadButton"
           animate={"open"}
           transition={{ ease: "easeOut", duration: 0.1, delay: 3 }}
@@ -38,19 +38,20 @@ function App() {
           >
             <CyberBtn title={"Download CV"} />
           </a>
-        </motion.div>
+        </motion.div> */}
+        <div>lol</div>
         <Home />
-        <About />
-        <Projects />
+        {/* <About />
+        <Projects /> */}
       </div>
-      <div className="bottomEdge">
+      {/* <div className="bottomEdge">
         <img
           src="https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/Vector.png"
           alt=""
         />
-      </div>
+      </div> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

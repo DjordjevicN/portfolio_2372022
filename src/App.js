@@ -5,7 +5,8 @@ import Projects from "./pages/projects/Projects"
 import video from "./components/video/3.mp4"
 import CyberBtn from "./components/button/CyberBtn"
 import { motion } from "framer-motion"
-// app
+import Intro from "./pages/IntroStory/Intro"
+
 function App() {
   const cvBtn = {
     open: {
@@ -19,14 +20,14 @@ function App() {
       <video id="bgVid" autoPlay loop muted>
         <source src={video} type="video/mp4" />
       </video>
-      <div className="topEdge">
+      {/* <div className="topEdge">
         <img
           src="https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/Vector.png"
           alt=""
         />
-      </div>
+      </div> */}
       <div className="content">
-        <motion.div
+        {/* <motion.div
           className="downloadButton"
           animate={"open"}
           transition={{ ease: "easeOut", duration: 0.1, delay: 3 }}
@@ -38,17 +39,18 @@ function App() {
           >
             <CyberBtn title={"Download CV"} />
           </a>
-        </motion.div>
+        </motion.div> */}
+        <Intro />
         <Home />
         <About />
         <Projects />
       </div>
-      <div className="bottomEdge">
+      {/* <div className="bottomEdge">
         <img
           src="https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/Vector.png"
           alt=""
         />
-      </div>
+      </div> */}
     </div>
   )
 }

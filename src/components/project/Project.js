@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import "./Project.scss"
-import { motion } from "framer-motion"
-import CyberBtn from "../button/CyberBtn"
+import React, { useState } from "react";
+import "./Project.scss";
+import { motion } from "framer-motion";
+import CyberBtn from "../button/CyberBtn";
 
 function Project({
   title,
@@ -17,7 +17,7 @@ function Project({
   visitLink2,
   visitLink2BtnText,
 }) {
-  const [entrance, setEntrance] = useState(false)
+  const [entrance, setEntrance] = useState(false);
 
   const projects = {
     open: {
@@ -33,7 +33,7 @@ function Project({
         delay: 0.7,
       },
     },
-  }
+  };
   return (
     <>
       <motion.div
@@ -42,10 +42,10 @@ function Project({
         transition={{ ease: "easeOut", duration: 0.3, delay: 0.2 }}
         variants={projects}
         onClick={() => {
-          if (visitLink) window.location.href = visitLink
+          if (visitLink) window.location.href = visitLink;
         }}
       >
-        <div className="project__content" onClick={() => setEntrance(true)}>
+        <div className="project__content">
           <div className="imagePreview">
             <img src={image} alt={`${title} project`} />
             <div className="information">
@@ -91,13 +91,13 @@ function Project({
             </div>
           </div>
         </div>
-        {/* <motion.div
+        <motion.div
           whileInView={() => setEntrance(true)}
           className="edge"
-        ></motion.div> */}
+        ></motion.div>
       </motion.div>
     </>
-  )
+  );
 }
 
-export default Project
+export default Project;

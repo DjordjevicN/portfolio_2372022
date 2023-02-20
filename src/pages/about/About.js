@@ -15,14 +15,29 @@ const About = () => {
                 <p className="title">ABOUT ME</p>
               </div>
               <div className="texts">
+                <p>I am a front-end developer with 3 years of experience.</p>
+
                 <p>
-                  Hi, I'm Nikola Djordjevic, a front-end developer based in
-                  Belgrade, Serbia.
-                  <br /> For the past ten months, I have been working on
-                  developing a dispatch dashboard, booking website and business
-                  website for a transportation company. I love developing
-                  user-experience based projects. I have a keen eye on animation
-                  and website design, too.
+                  I bring a passion for delivering intuitive and engaging user
+                  experiences to the table.
+                </p>
+                <p>
+                  I have honed my skills in developing dynamic and responsive
+                  websites that meet both business goals and user needs.
+                </p>
+                <p>
+                  With my tech stack, including JavaScript and ReactJS, I am
+                  able to bring my clients' visions to life and create visually
+                  appealing, functional websites.
+                </p>
+                <p>
+                  I am dedicated to staying up-to-date with the latest web
+                  development trends and continuously expanding my skill set.
+                </p>
+                <p>
+                  Whether working on a new project or updating an existing one,
+                  I strive to bring creativity, attention to detail, and a
+                  user-centered approach to each and every task.
                 </p>
               </div>
             </div>
@@ -32,51 +47,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="about">
-        <div className="about__content">
-          <div className="inner-content ">
-            <p>
-              Hi, I'm Nikola Djordjevic, a front-end developer based in
-              Belgrade, Serbia.
-              <br /> For the past ten months, I have been working on developing
-              a dispatch dashboard, booking website and business website for a
-              transportation company. I love developing user-experience based
-              projects. I have a keen eye on animation and website design, too.
-            </p>
-            <br />
-            <p>
-              Wanna get to know me more? Feel free to get in touch with me via
-              <a href="mailto:nikola.dj.87@gmail.com"> e-mail</a> , or social
-              media linked below.
-            </p>
-
-            <div className="links">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/nikola-djordjevic-503066193/"
-              >
-                LinkedIn
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/DjordjevicNix"
-              >
-                Twitter
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/DjordjevicN"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   )
 }

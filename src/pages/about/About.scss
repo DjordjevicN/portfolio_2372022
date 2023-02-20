@@ -12,14 +12,14 @@
       }
     }
     .body {
-      height: 100vh;
-      padding: 0 50px;
+      min-height: 100vh;
+      padding: 50px;
       background-color: $main-yellow;
       display: flex;
       justify-content: center;
       align-items: center;
       @include resp(800px) {
-        padding: 0 20px;
+        padding: 50px 20px;
       }
       &__content {
         display: grid;
@@ -45,6 +45,13 @@
               font-size: 36px;
               margin-bottom: 50px;
             }
+          }
+        }
+        .texts {
+          width: 80%;
+          p {
+            margin-top: 10px;
+            font-weight: 600;
           }
         }
       }

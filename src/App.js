@@ -40,7 +40,7 @@ function App() {
             <CyberBtn title={"Download CV"} />
           </a>
         </motion.div> */}
-        <Intro />
+        {/* <Intro /> */}
         <Home />
         <About />
         <Projects />

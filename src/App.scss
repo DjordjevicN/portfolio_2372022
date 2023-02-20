@@ -8,25 +8,25 @@
 .App {
   overflow-x: hidden;
 
-  .topEdge {
-    position: fixed;
-    top: -4px;
-    transform: rotate(180deg);
-    width: 100%;
-    z-index: 100;
-    img {
-      width: 100%;
-    }
-  }
-  .bottomEdge {
-    position: fixed;
-    bottom: -4px;
-    width: 100%;
-    z-index: 100;
-    img {
-      width: 100%;
-    }
-  }
+  // .topEdge {
+  //   position: fixed;
+  //   top: -4px;
+  //   transform: rotate(180deg);
+  //   width: 100%;
+  //   z-index: 100;
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
+  // .bottomEdge {
+  //   position: fixed;
+  //   bottom: -4px;
+  //   width: 100%;
+  //   z-index: 100;
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
 
   #bgVid {
     position: fixed;

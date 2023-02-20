@@ -20,12 +20,7 @@ function App() {
       <video id="bgVid" autoPlay loop muted>
         <source src={video} type="video/mp4" />
       </video>
-      {/* <div className="topEdge">
-        <img
-          src="https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/Vector.png"
-          alt=""
-        />
-      </div> */}
+
       <div className="content">
         {/* <motion.div
           className="downloadButton"
@@ -40,17 +35,11 @@ function App() {
             <CyberBtn title={"Download CV"} />
           </a>
         </motion.div> */}
-        {/* <Intro /> */}
+        <Intro />
         <Home />
         <About />
         <Projects />
       </div>
-      {/* <div className="bottomEdge">
-        <img
-          src="https://raw.githubusercontent.com/DjordjevicN/imagesRep/master/Vector.png"
-          alt=""
-        />
-      </div> */}
     </div>
   )
 }

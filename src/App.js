@@ -6,6 +6,7 @@ import video from "./components/video/3.mp4"
 // import CyberBtn from "./components/button/CyberBtn"
 // import { motion } from "framer-motion"
 import Intro from "./pages/IntroStory/Intro"
+import TechStack from "./pages/tech/TechStack"
 
 function App() {
   // const cvBtn = {
@@ -38,6 +39,7 @@ function App() {
         <Intro />
         <Home />
         <About />
+        <TechStack />
         <Projects />
       </div>
     </div>

@@ -1,12 +1,12 @@
 import "./App.scss"
 import About from "./pages/about/About"
-// import Home from "./pages/home/Home"
-// import Projects from "./pages/projects/Projects"
-// import Intro from "./pages/IntroStory/Intro"
-// import TechStack from "./pages/tech/TechStack"
+import Home from "./pages/home/Home"
+import Projects from "./pages/projects/Projects"
 import video from "./components/video/3.mp4"
 // import CyberBtn from "./components/button/CyberBtn"
 // import { motion } from "framer-motion"
+import Intro from "./pages/IntroStory/Intro"
+import TechStack from "./pages/tech/TechStack"
 
 function App() {
   // const cvBtn = {
@@ -36,10 +36,10 @@ function App() {
             <CyberBtn title={"Download CV"} />
           </a>
         </motion.div> */}
-        {/* <Intro /> */}
-        {/* <Home /> */}
-        {/* <Projects /> */}
-        {/* <TechStack /> */}
+        <Intro />
+        <Home />
+        <Projects />
+        <TechStack />
         <About />
       </div>
     </div>

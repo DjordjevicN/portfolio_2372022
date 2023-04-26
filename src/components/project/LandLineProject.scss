@@ -1,0 +1,60 @@
+@import "~/src/styles/colors.scss";
+@import "~/src/styles/mixins.scss";
+@import "~/src/styles/constants.scss";
+.singleProject {
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    @include resp(1175px) {
+      flex-direction: column-reverse;
+    }
+    .description {
+      width: 450px;
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+    .imagesWrapper {
+      margin: 100px auto;
+      width: 300px;
+      .imageGroup {
+        position: relative;
+        img {
+          cursor: pointer;
+          position: absolute;
+          z-index: 100;
+          width: 100%;
+        }
+        .main {
+          position: relative;
+          opacity: 1;
+          width: 110%;
+        }
+        .tableRight {
+          right: -5px;
+          top: 75px;
+          width: 60%;
+        }
+        .map {
+          right: -5px;
+          top: 0px;
+          width: 60%;
+        }
+        .tableLeft {
+          left: -5px;
+          top: 75px;
+          width: 60%;
+        }
+        .login {
+          left: -5px;
+          top: -5px;
+          width: 60%;
+        }
+        .jeep {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

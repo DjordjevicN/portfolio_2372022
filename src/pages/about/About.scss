@@ -1,9 +1,10 @@
 @import "../../styles/colors.scss";
 @import "../../styles/mixins.scss";
+@import "../../styles/constants.scss";
 
 .about {
   width: 100%;
-
+  margin-top: -20px;
   &__content {
     .topEdge {
       margin-bottom: -6px;
@@ -22,6 +23,7 @@
         padding: 50px 20px;
       }
       &__content {
+        max-width: $max-content-width;
         display: grid;
         grid-template-columns: 1fr 1fr;
         @include resp(800px) {

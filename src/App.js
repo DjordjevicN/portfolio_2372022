@@ -38,9 +38,9 @@ function App() {
         </motion.div> */}
         <Intro />
         <Home />
-        <About />
-        <TechStack />
         <Projects />
+        <TechStack />
+        <About />
       </div>
     </div>
   )

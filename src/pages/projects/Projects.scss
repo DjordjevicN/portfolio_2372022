@@ -1,5 +1,6 @@
-@import "../../styles/colors.scss";
-@import "../../styles/mixins.scss";
+@import "~/src/styles/colors.scss";
+@import "~/src/styles/mixins.scss";
+@import "~/src/styles/constants.scss";
 .projects {
   margin-top: -25px;
   &__content {
@@ -10,41 +11,12 @@
       }
     }
     .body {
-      padding: 150px 50px;
-      margin-top: -6px;
+      min-height: 100vh;
+      padding: 400px 50px 0px 50px;
       background-color: $main-yellow;
+      margin: 0 auto;
       &__content {
-        .sectionTitle {
-          .title {
-            font-weight: 900;
-            font-size: 36px;
-            @include resp(800px) {
-              font-size: 24px;
-            }
-          }
-        }
-        .display {
-          margin-top: 100px;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 80px;
-          &-menu {
-            text-align: right;
-            &__item {
-              font-size: 32px;
-              font-weight: 700;
-              margin-top: 15px;
-              color: #333;
-              cursor: pointer;
-              &:hover {
-                color: $light-blue;
-              }
-              &:first-child {
-                margin-top: 0;
-              }
-            }
-          }
-        }
+        max-width: $max-content-width;
       }
     }
     .bottomEdge {

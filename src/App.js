@@ -15,7 +15,7 @@ function App() {
   //     right: 30,
   //   },
   // }
-
+  console.log("test")
   return (
     <div className="App">
       <video id="bgVid" autoPlay loop muted>

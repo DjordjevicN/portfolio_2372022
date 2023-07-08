@@ -12,9 +12,10 @@
     }
     .body {
       min-height: 100vh;
-      padding: 400px 50px 0px 50px;
+      padding: 340px 50px 0px 50px;
       background-color: $main-yellow;
       margin: 0 auto;
+
       &__content {
         max-width: $max-content-width;
       }

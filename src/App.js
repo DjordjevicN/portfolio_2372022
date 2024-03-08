@@ -1,13 +1,13 @@
-import "./App.scss"
-import About from "./pages/about/About"
-import Home from "./pages/home/Home"
-import Projects from "./pages/projects/Projects"
-import video from "./components/video/3.mp4"
+import "./App.scss";
+import About from "./pages/about/About";
+import Home from "./pages/home/Home";
+import Projects from "./pages/projects/Projects";
+import video from "./components/video/3.mp4";
 // import CyberBtn from "./components/button/CyberBtn"
 // import { motion } from "framer-motion"
-import Intro from "./pages/IntroStory/Intro"
-import TechStack from "./pages/tech/TechStack"
-
+import Intro from "./pages/IntroStory/Intro";
+import TechStack from "./pages/tech/TechStack";
+// test
 function App() {
   // const cvBtn = {
   //   open: {
@@ -15,7 +15,7 @@ function App() {
   //     right: 30,
   //   },
   // }
-  console.log("test")
+  console.log("test");
   return (
     <div className="App">
       <video id="bgVid" autoPlay loop muted>
@@ -43,7 +43,7 @@ function App() {
         <About />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
